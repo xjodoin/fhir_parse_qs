@@ -357,7 +357,7 @@ class Search:
         elif type_ == "uri" and modifier in ("below", "above"):
             return True
         elif (
-            type_ == "reference" and modifier in supported
+            type_ == "reference" and modifier in self.supported
         ):  # e.g., :Patient.name, :Observation.id
             return True
         else:

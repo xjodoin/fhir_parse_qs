@@ -1,6 +1,6 @@
 # fhir_parse_qs
 
-[![PyPI version](https://badge.fury.io/py/fhir-parse-qs.svg)](https://badge.fury.io/py/fhir-parse-qs)
+[![PyPI version](https://badge.fury.io/py/fhir-qs-parser.svg)](https://badge.fury.io/py/fhir-qs-parser)
 
 A library to parse FHIR query strings.
 
@@ -11,6 +11,15 @@ A library to parse FHIR query strings.
 Releases 0.7.x and below used FHIR R3. Releases 0.8.x and greater use FHIR R4.
 
 The `update_mappings.py` script generates the mappings from the [HL7 FHIR releases](https://www.hl7.org/fhir/).
+
+#### Development (uv)
+
+This project uses uv for dependency management and packaging.
+
+- Install uv: `curl -LsSf https://astral.sh/uv/install.sh | sh` or `pipx install uv`
+- Create env and install deps: `uv sync --group dev`
+- Run tests: `uv run pytest`
+- Lint: `uv run black --check fhir_parse_qs tests`
 
 #### Usage
 
